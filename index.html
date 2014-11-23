@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            This is a connection demo.
+        </title>
+    </head>
+    <body>
+        <div id="buttons">
+            <button id="startButton" >Start</button>
+            <button id="sendButton" >Send</button>
+            <button id="stopButton" >Stop</button>                    
+        </div>
+        
+        <div>
+            <div style="float: left;">
+                <h2>Send:</h2>
+                <textarea id="dataChannelSend" disabled placeholder="Press start first."></textarea>
+            </div>
+            <div style="float: left;">
+                <h2>Receive:</h2>
+                <textarea id="dataChannelReceive" disabled></textarea>
+            </div>
+        </div>
+        
+        <div>
+            
+        </div>
+                    
+        
+        <div style="clear: left;">
+            <textarea  cols="80" rows="20" id="offerIn" placeholder="Paste json here."></textarea>
+        </div>
+        
+        <div id="offer">
+            <button id="receiveButton">Receive Offer</button>
+        </div>
+        
+        <div>
+            <span>
+                Outgoing offer is:
+            </span>
+            <span id="offerOut"></span>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+
+</html>
